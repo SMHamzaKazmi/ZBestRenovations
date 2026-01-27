@@ -1,0 +1,262 @@
+:root {
+    --primary-color: #0077b6; /* Blue */
+    --secondary-color: #ff7f50; /* Orange */
+}
+
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+    a:hover {
+        color: var(--secondary-color);
+    }
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+    .btn-primary:hover {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+    }
+
+/* HERO SECTION */
+.hero-section {
+    background-image: url('/images/main-banner.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Keep overlay and image inside rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+    /* Overlay */
+    .hero-section .overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.4));
+    }
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 1000px;
+    padding: 0 15px;
+    animation: floatUpDown 6s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title {
+    animation: fadeInUp 1s ease forwards;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    animation: fadeInUp 1.5s ease forwards;
+    opacity: 0.95;
+    margin-top: 1rem;
+}
+
+/* Floating animation */
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Text shadow to make text pop on any background */
+.hero-content h1,
+.hero-content p {
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Button */
+.hero-btn {
+    animation: fadeInUp 2s ease forwards, floatUpDown 3s ease-in-out infinite;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+    .hero-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+    }
+
+/* Scroll Down Arrow */
+.scroll-down {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+    .scroll-down span {
+        width: 36px; /* increased from 24px */
+        height: 36px; /* increased from 24px */
+        border-bottom: 4px solid #fff; /* thicker than 2px */
+        border-right: 4px solid #fff; /* thicker than 2px */
+        transform: rotate(45deg);
+        animation: scrollBounce 1.5s infinite;
+    }
+
+@keyframes scrollBounce {
+    0% {
+        transform: rotate(45deg) translate(0, 0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: rotate(45deg) translate(6px, 6px);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: rotate(45deg) translate(0, 0);
+        opacity: 1;
+    }
+}
+
+/* OUR SERVICES TITLE */
+#services h2 {
+    color: var(--primary-color); /* Blue */
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* SERVICES SECTION CARDS */
+#services .card {
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    #services .card:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+/* CARD TITLE ACCENT COLOR */
+.card-title {
+    color: var(--primary-color);
+}
+
+/* WHY CHOOSE US SECTION */
+#why-choose h2 {
+    color: var(--primary-color); /* Blue */
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+#why-choose .container {
+    background-color: #f8f9fa; /* Light grey */
+    border-radius: 15px; /* Rounded corners for main box */
+    padding: 40px 20px;
+}
+
+#why-choose .row {
+    justify-content: center; /* Center the row */
+    gap: 20px; /* Gap between individual boxes */
+}
+
+    #why-choose .row > .col-md-4 {
+        background-color: #ffffff; /* White individual boxes */
+        border-radius: 12px; /* Rounded corners for each box */
+        padding: 25px 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        flex: 0 0 30%; /* Slightly smaller width so all 3 fit in one row */
+        max-width: 30%;
+    }
+
+        #why-choose .row > .col-md-4:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+/* CTA BOX */
+#cta .cta-box {
+    background-color: var(--primary-color); /* Blue background */
+    color: #ffffff; /* White text */
+    border-radius: 20px; /* Rounded corners */
+    padding: 60px 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    max-width: 1200px; /* Increased width */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* CTA TITLE & TEXT */
+#cta h2,
+#cta p {
+    color: #ffffff;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* CTA BUTTON */
+#cta .hero-btn {
+    background-color: var(--secondary-color); /* Orange by default */
+    border-color: var(--secondary-color);
+    color: #fff;
+    animation: none;
+}
+
+    #cta .hero-btn:hover {
+        background-color: #ff5f20; /* Slightly darker orange on hover */
+        border-color: #ff5f20;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }

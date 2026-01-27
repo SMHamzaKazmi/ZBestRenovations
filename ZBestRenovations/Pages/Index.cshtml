@@ -1,0 +1,151 @@
+﻿@page
+@model IndexModel
+@{
+	ViewData["Title"] = "ZBestRenovations | Home";
+}
+
+<!-- HERO SECTION -->
+<section class="hero-section text-white">
+	<div class="overlay"></div>
+
+	<div class="container hero-content">
+		<h1 class="display-4 fw-bold hero-title">
+			ZBestRenovations
+		</h1>
+
+		<p class="lead hero-subtitle">
+			Residential & Commercial Renovation Services
+		</p>
+
+		<p class="lead hero-subtitle">
+			Quality craftsmanship for basements, kitchens, bathrooms, flooring,
+			and complete home renovations.
+		</p>
+
+		<a href="#services" class="btn btn-primary btn-lg hero-btn">
+			Get a Free Quote
+		</a>
+
+		<!-- Scroll Down Indicator -->
+		<a href="#services" class="scroll-down">
+			<span></span>
+		</a>
+	</div>
+</section>
+
+<!-- SERVICES OVERVIEW -->
+<section id="services" class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mt-3 mb-5">Our Services</h2>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="~/images/basement.jpeg" class="card-img-top" alt="Basement Renovations">
+                    <div class="card-body">
+                        <h5 class="card-title">Basement Renovations</h5>
+                        <p class="card-text">
+                            Transform your basement into a functional and modern living space.
+                        </p>
+                        <a href="/Gallery" class="btn btn-primary w-100 mt-3">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="~/images/kitchen.jpeg" class="card-img-top" alt="Kitchen Renovations">
+                    <div class="card-body">
+                        <h5 class="card-title">Kitchen Renovations</h5>
+                        <p class="card-text">
+                            Beautiful and practical kitchen designs tailored to your needs.
+                        </p>
+                        <a href="/Gallery" class="btn btn-primary w-100 mt-3">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="~/images/bathroom.jpeg" class="card-img-top" alt="Bathroom Renovations">
+                    <div class="card-body">
+                        <h5 class="card-title">Bathroom Renovations</h5>
+                        <p class="card-text">
+                            Elegant, comfortable, and durable bathroom renovations.
+                        </p>
+                        <a href="/Gallery" class="btn btn-primary w-100 mt-3">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="~/images/flooring-tiles.jpeg" class="card-img-top" alt="Flooring & Tiles">
+                    <div class="card-body">
+                        <h5 class="card-title">Flooring & Tiles</h5>
+                        <p class="card-text">
+                            High-quality flooring and tile installation for any space.
+                        </p>
+                        <a href="/Gallery" class="btn btn-primary w-100 mt-3">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="~/images/full-home.jpeg" class="card-img-top" alt="Full Home Renovations">
+                    <div class="card-body">
+                        <h5 class="card-title">Full Home Renovations</h5>
+                        <p class="card-text">
+                            Complete renovation solutions from planning to completion.
+                        </p>
+                        <a href="/Gallery" class="btn btn-primary w-100 mt-3">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why-choose" class="py-5">
+	<div class="container">
+		<h2 class="text-center fw-bold mb-5">Why Choose Us</h2>
+
+		<div class="row g-4">
+			<div class="col-md-4 text-center">
+				<h5 class="fw-bold">Experienced Team</h5>
+				<p>
+					Skilled professionals with years of experience in construction and renovations.
+				</p>
+			</div>
+
+			<div class="col-md-4 text-center">
+				<h5 class="fw-bold">Quality Workmanship</h5>
+				<p>
+					We use high-quality materials and proven techniques for lasting results.
+				</p>
+			</div>
+
+			<div class="col-md-4 text-center">
+				<h5 class="fw-bold">Customer Satisfaction</h5>
+				<p>
+					We focus on clear communication and delivering projects on time.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section id="cta" class="py-5 text-center">
+    <div class="container cta-box">
+        <h2 class="fw-bold">Ready to Start Your Renovation?</h2>
+        <p class="lead mt-3">
+            Contact us today to discuss your project and get a free estimate.
+        </p>
+        <a href="/contact" class="btn hero-btn btn-lg mt-3">
+            Contact Us
+        </a>
+    </div>
+</section>

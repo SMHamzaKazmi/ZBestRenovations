@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - ZBestRenovations</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/ZBestRenovations.styles.css" asp-append-version="true" />
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm mb-3">
+			<div class="container">
+				<!-- Brand -->
+				<a class="navbar-brand fw-bold" asp-area="" asp-page="/Index">ZBestRenovations</a>
+
+				<!-- Toggler/collapsible button -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+						</li>
+
+						<!-- Services Dropdown -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-dark" href="#" id="servicesDropdown" role="button"
+							   data-bs-toggle="dropdown" aria-expanded="false">
+								Services
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+								<li><a class="dropdown-item" asp-page="/Services/BasementRenovations">Basement Renovations</a></li>
+								<li><a class="dropdown-item" asp-page="/Services/KitchenRenovations">Kitchen Renovations</a></li>
+								<li><a class="dropdown-item" asp-page="/Services/BathroomRenovations">Bathroom Renovations</a></li>
+								<li><a class="dropdown-item" asp-page="/Services/FlooringTiles">Flooring & Tiles</a></li>
+								<li><a class="dropdown-item" asp-page="/Services/FullHomeRenovations">Full Home Renovations</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-page="/Gallery">Gallery</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-page="/About">About</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-page="/Contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<main role="main" class="pb-3">
+			@RenderBody()
+		</main>
+	</div>
+
+	<footer class="border-top footer text-muted">
+		<div class="container">
+			&copy; 2026 - ZBestRenovations - <a asp-area="" asp-page="/Privacy">Privacy</a>
+		</div>
+	</footer>
+
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
