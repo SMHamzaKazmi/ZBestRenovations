@@ -46,12 +46,3 @@ button.accept-policy {
   white-space: nowrap;
   line-height: 60px;
 }
-
-.navbar .nav-link,
-.navbar .navbar-brand {
-    color: #0077b6; /* Primary blue */
-}
-
-.navbar .nav-link:hover {
-    color: #ff7f50; /* Secondary orange on hover */
-}
