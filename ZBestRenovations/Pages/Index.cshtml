@@ -1,5 +1,5 @@
 ﻿@page
-@model IndexModel
+@model ZBestRenovations.Pages.IndexModel
 @{
 	ViewData["Title"] = "Home";
 }
@@ -22,7 +22,7 @@
 			and complete home renovations.
 		</p>
 
-		<a href="#services" class="btn btn-primary btn-lg hero-btn">
+        <a href="/Contact" class="btn btn-primary btn-lg hero-btn">
 			Get a Free Quote
 		</a>
 
@@ -41,26 +41,13 @@
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="~/images/home/basement.jpeg" class="card-img-top" alt="Basement Renovations">
+                    <img src="~/images/home/full-home.jpeg" class="card-img-top" alt="Full Home Renovations">
                     <div class="card-body">
-                        <h5 class="card-title">Basement Renovations</h5>
+                        <h5 class="card-title">Full Home Renovations</h5>
                         <p class="card-text">
-                            Transform your basement into a functional and modern living space.
+                            Complete renovation solutions from planning to completion.
                         </p>
-                        <a href="/Gallery#basement" class="btn btn-primary w-100 mt-3">View More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100">
-                    <img src="~/images/home/kitchen.jpeg" class="card-img-top" alt="Kitchen Renovations">
-                    <div class="card-body">
-                        <h5 class="card-title">Kitchen Renovations</h5>
-                        <p class="card-text">
-                            Beautiful and practical kitchen designs tailored to your needs.
-                        </p>
-                        <a href="/Gallery#kitchen" class="btn btn-primary w-100 mt-3">View More</a>
+                        <a href="/Gallery#fullhome" class="btn btn-primary w-100 mt-3">View More</a>
                     </div>
                 </div>
             </div>
@@ -93,13 +80,26 @@
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="~/images/home/full-home.jpeg" class="card-img-top" alt="Full Home Renovations">
+                    <img src="~/images/home/kitchen.jpeg" class="card-img-top" alt="Kitchen Renovations">
                     <div class="card-body">
-                        <h5 class="card-title">Full Home Renovations</h5>
+                        <h5 class="card-title">Kitchen Renovations</h5>
                         <p class="card-text">
-                            Complete renovation solutions from planning to completion.
+                            Beautiful and practical kitchen designs tailored to your needs.
                         </p>
-                        <a href="/Gallery#fullhome" class="btn btn-primary w-100 mt-3">View More</a>
+                        <a href="/Gallery#kitchen" class="btn btn-primary w-100 mt-3">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="~/images/home/basement.jpeg" class="card-img-top" alt="Basement Renovations">
+                    <div class="card-body">
+                        <h5 class="card-title">Basement Renovations</h5>
+                        <p class="card-text">
+                            Transform your basement into a functional and modern living space.
+                        </p>
+                        <a href="/Gallery#basement" class="btn btn-primary w-100 mt-3">View More</a>
                     </div>
                 </div>
             </div>
@@ -144,7 +144,7 @@
         <p class="lead mt-3">
             Contact us today to discuss your project and get a free estimate.
         </p>
-        <a href="/contact" class="btn hero-btn btn-lg mt-3">
+        <a href="/Contact" class="btn hero-btn btn-lg mt-3">
             Contact Us
         </a>
     </div>

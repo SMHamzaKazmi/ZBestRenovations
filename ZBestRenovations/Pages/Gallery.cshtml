@@ -1,51 +1,52 @@
 ﻿@page
-@model GalleryModel
+@model ZBestRenovations.Pages.GalleryModel
 @{
     ViewData["Title"] = "Gallery";
 }
 
 <section class="container py-5">
 
-    <!-- BASEMENT RENOVATIONS -->
+    <!-- FULL HOME RENOVATIONS -->
     <div class="service-header d-flex align-items-center justify-content-between mb-3">
-        <h2 id="basement" class="fw-bold mb-0">Basement Renovations</h2>
+        <h2 id="fullhome" class="fw-bold mb-0">Full Home Renovations</h2>
         <div class="carousel-controls">
-            <button class="carousel-btn left" onclick="scrollCarousel('basement-carousel', -1)">
+            <button class="carousel-btn left" onclick="scrollCarousel('fullhome-carousel', -1)">
                 <span class="chevron"></span>
             </button>
-            <button class="carousel-btn right" onclick="scrollCarousel('basement-carousel', 1)">
+            <button class="carousel-btn right" onclick="scrollCarousel('fullhome-carousel', 1)">
                 <span class="chevron"></span>
             </button>
         </div>
     </div>
     <div class="carousel-wrapper">
-        <div class="carousel-track" id="basement-carousel">
-            <img src="~/images/gallery/basement/basement-1.jpeg" loading="lazy" alt="Basement renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/basement/basement-2.jpeg" loading="lazy" alt="Basement renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/basement/basement-3.jpeg" loading="lazy" alt="Basement renovation" onclick="openImageModal(this.src)" />
-        </div>
-    </div>
-
-    <!-- KITCHEN RENOVATIONS -->
-    <div class="service-header d-flex align-items-center justify-content-between mb-3">
-        <h2 id="kitchen" class="fw-bold mb-0">Kitchen Renovations</h2>
-        <div class="carousel-controls">
-            <button class="carousel-btn left" onclick="scrollCarousel('kitchen-carousel', -1)">
-                <span class="chevron"></span>
-            </button>
-            <button class="carousel-btn right" onclick="scrollCarousel('kitchen-carousel', 1)">
-                <span class="chevron"></span>
-            </button>
-        </div>
-    </div>
-    <div class="carousel-wrapper">
-        <div class="carousel-track" id="kitchen-carousel">
-            <img src="~/images/gallery/kitchen/kitchen-1.jpeg" loading="lazy" alt="Kitchen renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/kitchen/kitchen-2.jpeg" loading="lazy" alt="Kitchen renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/kitchen/kitchen-3.jpeg" loading="lazy" alt="Kitchen renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/kitchen/kitchen-4.jpeg" loading="lazy" alt="Kitchen renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/kitchen/kitchen-5.jpeg" loading="lazy" alt="Kitchen renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/kitchen/kitchen-6.jpeg" loading="lazy" alt="Kitchen renovation" onclick="openImageModal(this.src)" />
+        <div class="carousel-track" id="fullhome-carousel">
+            <img src="~/images/gallery/full-home/full-home-1.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/full-home/full-home-2.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/full-home/full-home-3.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/full-home/full-home-4.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/full-home/full-home-5.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/full-home/full-home-6.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/full-home/full-home-7.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/full-home/full-home-8.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/full-home/full-home-9.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/full-home/full-home-10.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/full-home/full-home-11.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/full-home/full-home-12.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/full-home/full-home-13.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/full-home/full-home-14.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/full-home/full-home-15.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
+            <div class="video-item" onclick="openVideoModal('/images/gallery/full-home/full-home-video-1.mp4')">
+                <video preload="none" poster="~/images/gallery/video-image.jpeg">
+                    <source data-src="/images/gallery/full-home/full-home-video-1.mp4" type="video/mp4">
+                </video>
+                <span class="play-icon"></span>
+            </div>
+            <div class="video-item" onclick="openVideoModal('/images/gallery/full-home/full-home-video-2.mp4')">
+                <video preload="none" poster="~/images/gallery/video-image.jpeg">
+                    <source data-src="/images/gallery/full-home/full-home-video-2.mp4" type="video/mp4">
+                </video>
+                <span class="play-icon"></span>
+            </div>
         </div>
     </div>
 
@@ -152,47 +153,46 @@
         </div>
     </div>
 
-    <!-- FULL HOME RENOVATIONS -->
+    <!-- KITCHEN RENOVATIONS -->
     <div class="service-header d-flex align-items-center justify-content-between mb-3">
-        <h2 id="fullhome" class="fw-bold mb-0">Full Home Renovations</h2>
+        <h2 id="kitchen" class="fw-bold mb-0">Kitchen Renovations</h2>
         <div class="carousel-controls">
-            <button class="carousel-btn left" onclick="scrollCarousel('fullhome-carousel', -1)">
+            <button class="carousel-btn left" onclick="scrollCarousel('kitchen-carousel', -1)">
                 <span class="chevron"></span>
             </button>
-            <button class="carousel-btn right" onclick="scrollCarousel('fullhome-carousel', 1)">
+            <button class="carousel-btn right" onclick="scrollCarousel('kitchen-carousel', 1)">
                 <span class="chevron"></span>
             </button>
         </div>
     </div>
     <div class="carousel-wrapper">
-        <div class="carousel-track" id="fullhome-carousel">
-            <img src="~/images/gallery/full-home/full-home-1.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/full-home/full-home-2.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/full-home/full-home-3.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/full-home/full-home-4.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/full-home/full-home-5.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/full-home/full-home-6.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/full-home/full-home-7.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/full-home/full-home-8.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/full-home/full-home-9.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/full-home/full-home-10.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/full-home/full-home-11.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/full-home/full-home-12.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/full-home/full-home-13.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/full-home/full-home-14.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <img src="~/images/gallery/full-home/full-home-15.jpeg" loading="lazy" alt="Full Home renovation" onclick="openImageModal(this.src)" />
-            <div class="video-item" onclick="openVideoModal('/images/gallery/full-home/full-home-video-1.mp4')">
-                <video preload="none" poster="~/images/gallery/video-image.jpeg">
-                    <source data-src="/images/gallery/full-home/full-home-video-1.mp4" type="video/mp4">
-                </video>
-                <span class="play-icon"></span>
-            </div>
-            <div class="video-item" onclick="openVideoModal('/images/gallery/full-home/full-home-video-2.mp4')">
-                <video preload="none" poster="~/images/gallery/video-image.jpeg">
-                    <source data-src="/images/gallery/full-home/full-home-video-2.mp4" type="video/mp4">
-                </video>
-                <span class="play-icon"></span>
-            </div>
+        <div class="carousel-track" id="kitchen-carousel">
+            <img src="~/images/gallery/kitchen/kitchen-1.jpeg" loading="lazy" alt="Kitchen renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/kitchen/kitchen-2.jpeg" loading="lazy" alt="Kitchen renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/kitchen/kitchen-3.jpeg" loading="lazy" alt="Kitchen renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/kitchen/kitchen-4.jpeg" loading="lazy" alt="Kitchen renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/kitchen/kitchen-5.jpeg" loading="lazy" alt="Kitchen renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/kitchen/kitchen-6.jpeg" loading="lazy" alt="Kitchen renovation" onclick="openImageModal(this.src)" />
+        </div>
+    </div>
+
+    <!-- BASEMENT RENOVATIONS -->
+    <div class="service-header d-flex align-items-center justify-content-between mb-3">
+        <h2 id="basement" class="fw-bold mb-0">Basement Renovations</h2>
+        <div class="carousel-controls">
+            <button class="carousel-btn left" onclick="scrollCarousel('basement-carousel', -1)">
+                <span class="chevron"></span>
+            </button>
+            <button class="carousel-btn right" onclick="scrollCarousel('basement-carousel', 1)">
+                <span class="chevron"></span>
+            </button>
+        </div>
+    </div>
+    <div class="carousel-wrapper">
+        <div class="carousel-track" id="basement-carousel">
+            <img src="~/images/gallery/basement/basement-1.jpeg" loading="lazy" alt="Basement renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/basement/basement-2.jpeg" loading="lazy" alt="Basement renovation" onclick="openImageModal(this.src)" />
+            <img src="~/images/gallery/basement/basement-3.jpeg" loading="lazy" alt="Basement renovation" onclick="openImageModal(this.src)" />
         </div>
     </div>
 
@@ -214,9 +214,9 @@
     // Carousel scroll
     function scrollCarousel(id, direction) {
         const carousel = document.getElementById(id);
-        const itemWidth = 300; // width of one item
-        const gap = 20;        // gap between items
-        const visibleItems = 4; // number of items to scroll at a time
+        const itemWidth = 300;
+        const gap = 20;
+        const visibleItems = 4;
 
         const scrollAmount = visibleItems * (itemWidth + gap);
 
@@ -247,9 +247,9 @@
         const modal = document.getElementById("videoModal");
         const video = document.getElementById("modalVideo");
 
-        video.src = src;         // set video path
-        video.load();            // load the video
-        video.play();            // autoplay
+        video.src = src;
+        video.load();
+        video.play();
 
         modal.classList.add("show");
         document.body.style.overflow = "hidden";
@@ -260,12 +260,11 @@
         const video = document.getElementById("modalVideo");
 
         video.pause();
-        video.src = "";          // clear the src to stop loading
+        video.src = "";
         modal.classList.remove("show");
         document.body.style.overflow = "";
     }
 
-    // Lazy load videos when they scroll into view
     document.addEventListener("DOMContentLoaded", function () {
         const videos = document.querySelectorAll('.video-item video source');
 
@@ -274,14 +273,14 @@
                 if (entry.isIntersecting) {
                     const source = entry.target;
                     if (source.dataset.src) {
-                        source.src = source.dataset.src; // set the actual src
-                        source.parentElement.load();      // load the video
-                        source.removeAttribute('data-src'); // remove data-src after loading
+                        source.src = source.dataset.src;
+                        source.parentElement.load();
+                        source.removeAttribute('data-src');
                     }
-                    observer.unobserve(source); // stop observing this video
+                    observer.unobserve(source);
                 }
             });
-        }, { threshold: 0.25 }); // trigger when 25% visible
+        }, { threshold: 0.25 });
 
         videos.forEach(video => observer.observe(video));
     });

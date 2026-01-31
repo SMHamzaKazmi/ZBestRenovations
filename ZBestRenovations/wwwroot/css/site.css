@@ -34,9 +34,9 @@ a {
     transition: color 0.3s ease;
 }
 
-    a:hover {
-        color: var(--secondary-color);
-    }
+a:hover {
+    color: var(--secondary-color);
+}
 
 .btn-primary {
     background-color: var(--primary-color);
@@ -44,10 +44,10 @@ a {
     transition: all 0.3s ease;
 }
 
-    .btn-primary:hover {
-        background-color: var(--secondary-color);
-        border-color: var(--secondary-color);
-    }
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
 
 .logo {
     height: 40px;
@@ -55,7 +55,7 @@ a {
 
 /* HERO SECTION */
 .hero-section {
-    background-image: url('/images/home/main.jpeg');
+    background-image: url('/images/home/background.jpeg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -65,17 +65,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px; /* Rounded corners */
-    overflow: hidden; /* Keep overlay and image inside rounded corners */
+    border-radius: 20px;
+    overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-    /* Overlay */
-    .hero-section .overlay {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.4));
-    }
+/* Overlay */
+.hero-section .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.4));
+}
 
 .hero-content {
     position: relative;
@@ -137,12 +137,12 @@ a {
     border-color: var(--primary-color);
 }
 
-    .hero-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-        background-color: var(--secondary-color);
-        border-color: var(--secondary-color);
-    }
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
 
 /* Scroll Down Arrow */
 .scroll-down {
@@ -151,14 +151,14 @@ a {
     justify-content: center;
 }
 
-    .scroll-down span {
-        width: 36px; /* increased from 24px */
-        height: 36px; /* increased from 24px */
-        border-bottom: 4px solid #fff; /* thicker than 2px */
-        border-right: 4px solid #fff; /* thicker than 2px */
-        transform: rotate(45deg);
-        animation: scrollBounce 1.5s infinite;
-    }
+.scroll-down span {
+    width: 36px;
+    height: 36px;
+    border-bottom: 4px solid #fff;
+    border-right: 4px solid #fff;
+    transform: rotate(45deg);
+    animation: scrollBounce 1.5s infinite;
+}
 
 @keyframes scrollBounce {
     0% {
@@ -179,22 +179,22 @@ a {
 
 /* OUR SERVICES TITLE */
 #services h2 {
-    color: var(--primary-color); /* Blue */
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    color: var(--primary-color);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* SERVICES SECTION CARDS */
 #services .card {
-    border-radius: 15px; /* Rounded corners */
+    border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-    #services .card:hover {
-        transform: translateY(-7px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    }
+#services .card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
 
 /* CARD TITLE ACCENT COLOR */
 .card-title {
@@ -203,8 +203,8 @@ a {
 
 /* WHY CHOOSE US SECTION */
 #why-choose h2 {
-    color: var(--primary-color); /* Blue */
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    color: var(--primary-color);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 #why-choose .container {
@@ -214,34 +214,34 @@ a {
 }
 
 #why-choose .row {
-    justify-content: center; /* Center the row */
-    gap: 20px; /* Gap between individual boxes */
+    justify-content: center;
+    gap: 20px;
 }
 
-    #why-choose .row > .col-md-4 {
-        background-color: #ffffff; /* White individual boxes */
-        border-radius: 12px; /* Rounded corners for each box */
-        padding: 25px 15px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        flex: 0 0 30%; /* Slightly smaller width so all 3 fit in one row */
-        max-width: 30%;
-    }
+#why-choose .row > .col-md-4 {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 30%;
+    max-width: 30%;
+}
 
-        #why-choose .row > .col-md-4:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
+#why-choose .row > .col-md-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
 
 /* CTA BOX */
 #cta .cta-box {
-    background-color: var(--primary-color); /* Blue background */
-    color: #ffffff; /* White text */
-    border-radius: 20px; /* Rounded corners */
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-radius: 20px;
     padding: 60px 20px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    max-width: 1200px; /* Increased width */
-    margin: 0 auto; /* Center horizontally */
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 /* CTA TITLE & TEXT */
@@ -253,44 +253,41 @@ a {
 
 /* CTA BUTTON */
 #cta .hero-btn {
-    background-color: var(--secondary-color); /* Orange by default */
+    background-color: var(--secondary-color);
     border-color: var(--secondary-color);
     color: #fff;
     animation: none;
 }
 
-    #cta .hero-btn:hover {
-        background-color: #ff5f20; /* Slightly darker orange on hover */
-        border-color: #ff5f20;
-        transform: translateY(-3px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    }
+#cta .hero-btn:hover {
+    background-color: #ff5f20;
+    border-color: #ff5f20;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
 
 /* Brand */
 .navbar .navbar-brand {
     color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+/* Brand hover */
+.navbar .navbar-brand:hover {
+    color: var(--secondary-color);
 }
 
 /* Navbar links */
 .navbar .navbar-nav .nav-link {
     color: var(--primary-color);
     transition: color 0.3s ease;
+    font-weight: bold;
 }
 
-    /* Hover effect */
-    .navbar .navbar-nav .nav-link:hover {
-        color: var(--secondary-color);
-    }
-
-/* Dropdown menu items */
-.navbar .dropdown-menu .dropdown-item {
-    color: var(--primary-color);
+/* Hover effect */
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--secondary-color);
 }
-
-    .navbar .dropdown-menu .dropdown-item:hover {
-        color: var(--secondary-color);
-        background-color: #f8f9fa; /* keep this as-is */
-    }
 
 /* Navbar shadow */
 .navbar.fixed-top {
@@ -300,9 +297,9 @@ a {
 /* ===== SERVICE HEADER ===== */
 .service-header h2 {
     color: var(--primary-color);
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     position: relative;
-    padding-top: 100px; /* height of your navbar or slightly more */
+    padding-top: 100px;
     margin-top: -100px;
 }
 
@@ -314,8 +311,8 @@ a {
 
 /* ===== CAROUSEL ARROW BUTTONS ===== */
 .carousel-btn {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: var(--primary-color);
     border: none;
@@ -326,33 +323,33 @@ a {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-    .carousel-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-    }
+.carousel-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
 
-    /* ===== CHEVRON ICON ===== */
-    .carousel-btn .chevron {
-        width: 16px;
-        height: 16px;
-        border-right: 4px solid var(--secondary-color);
-        border-bottom: 4px solid var(--secondary-color);
-    }
+/* ===== CHEVRON ICON ===== */
+.carousel-btn .chevron {
+    width: 14px;
+    height: 14px;
+    border-right: 4px solid var(--secondary-color);
+    border-bottom: 4px solid var(--secondary-color);
+}
 
-    /* Left arrow */
-    .carousel-btn.left .chevron {
-        transform: rotate(135deg);
-    }
+/* Left arrow */
+.carousel-btn.left .chevron {
+    transform: rotate(135deg);
+}
 
-    /* Right arrow */
-    .carousel-btn.right .chevron {
-        transform: rotate(-45deg);
-    }
+/* Right arrow */
+.carousel-btn.right .chevron {
+    transform: rotate(-45deg);
+}
 
 /* ===== CAROUSEL ===== */
 .carousel-wrapper {
     overflow: hidden;
-    margin-bottom: 80px; /* or whatever gap you want */
+    margin-bottom: 100px;
 }
 
 .carousel-track {
@@ -363,28 +360,28 @@ a {
     padding-bottom: 10px;
 }
 
-    /* Hide scrollbar */
-    .carousel-track::-webkit-scrollbar {
-        display: none;
-    }
+/* Hide scrollbar */
+.carousel-track::-webkit-scrollbar {
+    display: none;
+}
 
-    /* Images & videos */
-    .carousel-track img,
-    .carousel-track video {
-        width: 300px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 16px;
-        cursor: pointer;
-        flex-shrink: 0;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease;
-    }
+/* Images & videos */
+.carousel-track img,
+.carousel-track video {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
 
-        .carousel-track img:hover,
-        .carousel-track video:hover {
-            transform: scale(1.03);
-        }
+.carousel-track img:hover,
+.carousel-track video:hover {
+    transform: scale(1.03);
+}
 
 /* ===== VIDEO PLAY ICON OVERLAY ===== */
 .video-item {
@@ -392,44 +389,43 @@ a {
     flex-shrink: 0;
 }
 
-    .video-item video {
-        width: 300px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 16px;
-    }
+.video-item video {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+}
 
-    /* Play icon circle */
-    .video-item .play-icon {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 56px;
-        height: 56px;
-        background-color: rgba(0, 0, 0, 0.6);
-        border-radius: 50%;
-        transform: translate(-50%, -50%);
-        pointer-events: none;
-    }
+/* Play icon circle */
+.video-item .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 56px;
+    height: 56px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
 
-        /* Play triangle */
-        .video-item .play-icon::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 52%;
-            transform: translate(-50%, -50%);
-            width: 0;
-            height: 0;
-            border-left: 16px solid white;
-            border-top: 10px solid transparent;
-            border-bottom: 10px solid transparent;
-        }
+/* Play triangle */
+.video-item .play-icon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 16px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
 
-    /* Hover effect stays consistent */
-    .video-item:hover {
-        transform: scale(1.03);
-    }
+.video-item:hover {
+    transform: scale(1.03);
+}
 
 /* ===== IMAGE MODAL ===== */
 .image-modal {
@@ -445,17 +441,17 @@ a {
     transition: opacity 0.3s ease;
 }
 
-    .image-modal.show {
-        opacity: 1;
-        pointer-events: auto;
-    }
+.image-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
 
-    .image-modal img {
-        max-width: 90%;
-        max-height: 85%;
-        border-radius: 16px;
-        box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-    }
+.image-modal img {
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
 
 /* Close button */
 .close-modal {
@@ -481,24 +477,89 @@ a {
     transition: opacity 0.3s ease;
 }
 
-    .video-modal.show {
-        opacity: 1;
-        pointer-events: auto;
-    }
+.video-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
 
-    .video-modal video {
-        max-width: 90%;
-        max-height: 85%;
-        border-radius: 16px;
-        box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-    }
+.video-modal video {
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
 
-    /* Close button (reuse from image modal) */
-    .video-modal .close-modal {
-        position: absolute;
-        top: 30px;
-        right: 40px;
-        font-size: 40px;
-        color: white;
-        cursor: pointer;
-    }
+/* Close button (reuse from image modal) */
+.video-modal .close-modal {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-banner {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.contact-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.contact-info-section .section-heading {
+    color: var(--primary-color);
+    text-align: center;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.contact-name {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.contact-number {
+    font-size: 1.25rem;
+}
+
+.contact-qr {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Email section */
+.contact-email {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact-email-heading {
+    color: var(--primary-color);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+.contact-email-address {
+    font-size: 1.25rem;
+}
